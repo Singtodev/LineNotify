@@ -37,7 +37,7 @@ class LineNotify:
         response = requests.post(self.line_api_url, headers=headers , data=data);
 
         if response.status_code == 200:
-            print("Message Line Send!");
+            print("Send Message Success!");
         else:
             print(F"Failed To send Message. Response : {response.status_code} , {response.text}");
 
